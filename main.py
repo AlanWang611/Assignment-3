@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-signal, sample_rate = librosa.load('./sad/YAF_tape_sad.wav')
+signal, sample_rate = librosa.load('./fear_test/YAF_merge_fear.wav')
 
 # plot audio files in time domain
 plt.figure(1)
