@@ -2,8 +2,9 @@
 import librosa
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
-signal, sample_rate = librosa.load('./sample_audio_data/audio_happy.wav')
+signal, sample_rate = librosa.load('./sad/YAF_tape_sad.wav')
 
 # plot audio files in time domain
 plt.figure(1)
@@ -35,7 +36,7 @@ plt.colorbar()
 plt.show()
 #
 # audio feature extraction: loudness
-import pandas as pd
+
 
 df_loudness = pd.DataFrame()
 S, phase = librosa.magphase(librosa.stft(signal))
